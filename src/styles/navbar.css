@@ -1,0 +1,19 @@
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    border-bottom: 2px solid red;
+}
+
+.navbar-logo {
+    height: 100px;
+    max-width: 100%;
+}
+
+.navbar-links-item {
+    margin: 0;
+    padding: 22px;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
