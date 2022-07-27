@@ -1,0 +1,14 @@
+.properties-container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+}
+
+h2 {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+
+}

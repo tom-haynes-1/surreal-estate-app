@@ -1,11 +1,10 @@
 import React from 'react';
+import '../styles/properties.css';
 
 const Properties = () => (
-  <div className="properties">
-    <h2>Properties Page</h2>
+  <div className="properties-container">
+    <h2>View a Property</h2>
   </div>
 );
-
-  <div>Properties Page</div>;
 
 export default Properties;

@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: row;
     background: white;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid grey;
 }
 
-/* .navbar-links {
-    margin: 0;
-    padding: 0;
-} */
+.navbar-links {
+    margin: 20px;
+    padding: auto;
+}
 
 .navbar-logo {
     height: 100px;
