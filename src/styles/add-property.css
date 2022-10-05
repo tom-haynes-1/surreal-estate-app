@@ -1,6 +1,6 @@
 .add-property-container {
-    padding: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: green;
@@ -10,5 +10,67 @@ h2 {
     color: white;
     text-decoration: underline;
     text-underline-offset: 5px;
+    cursor: pointer;
+
+}
+
+.add-property-form {
+    padding: 20px;
+    background-color: rgb(247, 245, 243);
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 1px rgba(67, 66, 66, 0.311);
+    border-radius: 10px;
+  }
+
+  button {
+    width: 80px;
+    margin-top: 10px;
+}
+
+.form-btn {
+    color: green;
+    background: white;
+    border: 2px solid green;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    
+}
+
+.form-btn:hover {
+    background: green;
+    color: white;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+input {
+    width: 70%;
+    border-radius: 10px;
+    border: 1px solid green;
+    text-indent: 10px;
+    font-size: 20px;
+}
+
+select {
+    width: 70%;
+    border-radius: 10px;
+    border: 1px solid green;
+    text-indent: 10px;
+    font-size: 20px;
 }
 

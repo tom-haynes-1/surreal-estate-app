@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/properties.css';
 
 const Properties = () => (
-  <div className="properties-container">
+  <div className="properties-title-container">
     <h2>View a Property</h2>
   </div>
 );
