@@ -52,10 +52,10 @@ const AddProperty = () => {
 
   return (
     <>
-      <div className="add-property-container">
+      <div className="add-property-title-container">
         <h2>Add a Property</h2>
       </div>
-      <div>
+      <div className="add-property-container">
         <form className="add-property-form" onSubmit={handleAddProperty}>
           <Alert message={alert.message} success={alert.isSuccess} />
           <div>
