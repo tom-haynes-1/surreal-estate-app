@@ -14,27 +14,38 @@ const Properties = () => {
   const [properties, setProperties] = useState(initialState.properties);
   const [alert, setAlert] = useState({ message: '', isSuccess: false });
 
+  const endpoint = 'http://localhost:3000/api/v1/PropertyListing/';
+
   useEffect(() => {
     axios
-      .get('http://localhost:3000/api/v1/PropertyListing/')
+      .get(endpoint)
       .then(({ data }) => setProperties(data))
       .catch((error) => {
         console.log(error);
         setAlert({
-          message: 'Error adding property. Please try again later.',
-          isSucces: false,
+          message: 'Server error. Please try again later.',
+          isSuccess: false,
         });
       });
   }, []);
 
   return (
-    <div className="properties-title-container">
-      <h2>View a Property</h2>
-      <Alert message={alert.message} success={alert.isSuccess} />
-      {properties.map((property) => (
-        <PropertyCard {...property} />
-      ))}
-    </div>
+    <>
+      <div className="view-property-title-container">
+        <h2>View a Property</h2>
+      </div>
+      <div className="properties-container">
+        <Alert message={alert.message} success={alert.isSuccess} />
+        <div className="properties">
+          {properties.map((property) => (
+            <div className="item">
+              <PropertyCard key={property._id} {...property} />
+            </div>
+          ))}
+        </div>
+      </div>
+
+    </>
   );
 };
 
