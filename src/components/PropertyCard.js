@@ -41,30 +41,6 @@ const PropertyCard = ({
   );
 };
 
-// <div className="property-card-container">
-//   <h3 className="property-card-title">{title}</h3>
-//   <p className="property-card__type-city">
-//     <FaRegBuilding className="property-icon-location" /> {type} - {city}
-//   </p>
-//   <p className="property-card__bathrooms">
-//     <FaBath className="property-icon-bathrooms" /> {bathrooms}
-//   </p>
-//   <p className="property-card__bedrooms">
-//     <FaBed className="property-icon-bedrooms" /> {bedrooms}
-//   </p>
-//   <p className="property-card__price">
-//     <FaPoundSign className="property-icon-price" /> {price}
-//   </p>
-//   <div className="property-card__email-container">
-//     <a className="property-card__email-link" href={`mailto:${email}?subject=${title}`}>
-//       <FaEnvelope className="property-icon-email" />
-//       Email
-//     </a>
-//   </div>
-// </div>
-//   );
-// };
-
 export default PropertyCard;
 
 PropertyCard.defaultProps = {
