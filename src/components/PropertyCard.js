@@ -18,21 +18,21 @@ const PropertyCard = ({
 }) => {
   return (
     <div className="property-card-container">
-      <h3 className="property-card-title">{title}</h3>
-      <p className="property-card__type-city">
-        <FaRegBuilding className="property-icon-location" /> {type} - {city}
-      </p>
-      <p className="property-card__bathrooms">
-        <FaBath className="property-icon-bathrooms" /> {bathrooms}
-      </p>
-      <p className="property-card__bedrooms">
-        <FaBed className="property-icon-bedrooms" /> {bedrooms}
-      </p>
-      <p className="property-card__price">
-        <FaPoundSign className="property-icon-price" /> {price}
-      </p>
-      <div>
-        <a className="property-card__email-link" href={`mailto:${email}?subject=${title}`}>
+      <div className="property-card-info">
+        <div className="property-card-title">{title}</div>
+        <div className="property-card-location">
+          <FaRegBuilding className="property-icon-location" /> {type} - {city}
+        </div>
+        <div className="property-card-bathrooms">
+          <FaBath className="property-icon-bathrooms" /> {bathrooms}
+        </div>
+        <div className="property-card-bedrooms">
+          <FaBed className="property-icon-bedrooms" /> {bedrooms}
+        </div>
+        <div className="property-card-price">
+          <FaPoundSign className="property-icon-price" /> {price}
+        </div>
+        <a className="property-card-email" href={`mailto:${email}?subject=${title}`}>
           <FaEnvelope className="property-icon-email" />
           Email
         </a>
@@ -40,6 +40,30 @@ const PropertyCard = ({
     </div>
   );
 };
+
+// <div className="property-card-container">
+//   <h3 className="property-card-title">{title}</h3>
+//   <p className="property-card__type-city">
+//     <FaRegBuilding className="property-icon-location" /> {type} - {city}
+//   </p>
+//   <p className="property-card__bathrooms">
+//     <FaBath className="property-icon-bathrooms" /> {bathrooms}
+//   </p>
+//   <p className="property-card__bedrooms">
+//     <FaBed className="property-icon-bedrooms" /> {bedrooms}
+//   </p>
+//   <p className="property-card__price">
+//     <FaPoundSign className="property-icon-price" /> {price}
+//   </p>
+//   <div className="property-card__email-container">
+//     <a className="property-card__email-link" href={`mailto:${email}?subject=${title}`}>
+//       <FaEnvelope className="property-icon-email" />
+//       Email
+//     </a>
+//   </div>
+// </div>
+//   );
+// };
 
 export default PropertyCard;
 

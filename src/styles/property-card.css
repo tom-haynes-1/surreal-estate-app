@@ -1,19 +1,54 @@
 .property-card-container {
-    height: 50vh;
+    height: 55vh;
+    margin: 10px;
     padding: 10px;
+    background-color: rgb(247, 245, 243);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border: 2px solid green;
+  }
+
+  .property-card-info {
+    display: flex;
+    flex-direction: column;
   }
   
   .property-card-title {
     font-weight: 700;
+    margin: 5px;
+    padding: 5px;
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 5px;
+    border: 2px solid green;
   }
 
-  p {
+  .property-card-location,
+  .property-card-bathrooms,
+  .property-card-bedrooms,
+  .property-card-price {
     border: 2px solid green;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .property-card-email {
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(104, 5, 104);
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid green;
+  } 
+
+  .property-icon-location, 
+  .property-icon-bathrooms,
+  .property-icon-bedrooms,
+  .property-icon-price,
+  .property-icon-email {
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(104, 5, 104);
   }
