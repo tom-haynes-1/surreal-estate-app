@@ -1,4 +1,3 @@
-/* eslint-disable arrow-body-style */
 /* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -15,31 +14,29 @@ const PropertyCard = ({
   price,
   city,
   email,
-}) => {
-  return (
-    <div className="property-card-container">
-      <div className="property-card-info">
-        <div className="property-card-title">{title}</div>
-        <div className="property-card-location">
-          <FaRegBuilding className="property-icon-location" /> {type} - {city}
-        </div>
-        <div className="property-card-bathrooms">
-          <FaBath className="property-icon-bathrooms" /> {bathrooms}
-        </div>
-        <div className="property-card-bedrooms">
-          <FaBed className="property-icon-bedrooms" /> {bedrooms}
-        </div>
-        <div className="property-card-price">
-          <FaPoundSign className="property-icon-price" /> {price}
-        </div>
-        <a className="property-card-email" href={`mailto:${email}?subject=${title}`}>
-          <FaEnvelope className="property-icon-email" />
-          Email
-        </a>
+}) => (
+  <div className="property-card-container">
+    <div className="property-card-info">
+      <div className="property-card-title">{title}</div>
+      <div className="property-card-location">
+        <FaRegBuilding className="property-icon-location" /> {type} - {city}
       </div>
+      <div className="property-card-bathrooms">
+        <FaBath className="property-icon-bathrooms" /> {bathrooms}
+      </div>
+      <div className="property-card-bedrooms">
+        <FaBed className="property-icon-bedrooms" /> {bedrooms}
+      </div>
+      <div className="property-card-price">
+        <FaPoundSign className="property-icon-price" /> {price}
+      </div>
+      <a className="property-card-email" href={`mailto:${email}?subject=${title}`}>
+        <FaEnvelope className="property-icon-email" />
+        Email
+      </a>
     </div>
-  );
-};
+  </div>
+);
 
 export default PropertyCard;
 
@@ -48,7 +45,7 @@ PropertyCard.defaultProps = {
   type: '',
   bathrooms: 0,
   bedrooms: 0,
-  price: 0,
+  price: '',
   city: '',
   email: '',
 };

@@ -19,7 +19,7 @@ const Properties = () => {
   useEffect(() => {
     axios
       .get(endpoint)
-      .then(({ data }) => setProperties(data))
+      .then((response) => setProperties(response.data))
       .catch((error) => {
         console.log(error);
         setAlert({
@@ -30,7 +30,7 @@ const Properties = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <div className="view-property-title-container">
         <h2>View a Property</h2>
       </div>
@@ -44,8 +44,7 @@ const Properties = () => {
           ))}
         </div>
       </div>
-
-    </>
+    </div>
   );
 };
 

@@ -6,6 +6,14 @@
     background-color: green;
 }
 
+.add-property-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
 h2 {
     color: white;
     text-decoration: underline;
