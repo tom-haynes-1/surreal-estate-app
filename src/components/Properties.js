@@ -38,8 +38,8 @@ const Properties = () => {
         <Alert message={alert.message} success={alert.isSuccess} />
         <div className="properties">
           {properties.map((property) => (
-            <div className="item">
-              <PropertyCard key={property._id} {...property} />
+            <div key={property._id} className="item">
+              <PropertyCard {... property} />
             </div>
           ))}
         </div>

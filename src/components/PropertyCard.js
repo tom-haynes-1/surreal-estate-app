@@ -43,8 +43,8 @@ export default PropertyCard;
 PropertyCard.defaultProps = {
   title: '',
   type: '',
-  bathrooms: 0,
-  bedrooms: 0,
+  bathrooms: '',
+  bedrooms: '',
   price: '',
   city: '',
   email: '',
@@ -53,9 +53,9 @@ PropertyCard.defaultProps = {
 PropertyCard.propTypes = {
   title: PropTypes.string,
   type: PropTypes.string,
-  bathrooms: PropTypes.number,
-  bedrooms: PropTypes.number,
-  price: PropTypes.number,
+  bathrooms: PropTypes.string,
+  bedrooms: PropTypes.string,
+  price: PropTypes.string,
   city: PropTypes.string,
   email: PropTypes.string,
 };
